@@ -1,9 +1,14 @@
 package one.digialinnovation.parking.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.time.LocalDateTime;
 
+@Entity
 public class Parking {
     
+    @Id
     private String id;
     private String license;
     private String state;
